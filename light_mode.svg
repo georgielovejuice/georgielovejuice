@@ -1,62 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="889" height="456">
-<rect x="0.5" y="0.5" width="888" height="455" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1048" height="496">
+<rect x="0.5" y="0.5" width="1047" height="495" rx="8" fill="#ffffff" stroke="#d0d7de"/>
 <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" xml:space="preserve">
-<text x="28" y="55.2" font-size="8" fill="#24292f">                   BBBBBBB#Eri-</text>
-<text x="28" y="64.8" font-size="8" fill="#24292f">                #BBB@@@@@@@BwE9####B##</text>
-<text x="28" y="74.4" font-size="8" fill="#24292f">            |BBBB@@@@@@@@B@#BBBBBBBBBBBB-</text>
-<text x="28" y="84.0" font-size="8" fill="#24292f">          o-B@@@@@@@@@BBBBB9#BBBBBBBBBB@BB9{-</text>
-<text x="28" y="93.6" font-size="8" fill="#24292f">        &lt;oo@@@@@@B@@@BBBBB#BB##BBBBBBBBBBBB#\--</text>
-<text x="28" y="103.2" font-size="8" fill="#24292f">       //B@@@@BB#B#B@###B#BB###BB#BBBBB###B@@-\&lt;</text>
-<text x="28" y="112.8" font-size="8" fill="#24292f">      //B@BB@B#9E99#99##9#B9#Eo---9EE9###BBBBBB\</text>
-<text x="28" y="122.4" font-size="8" fill="#24292f">     !/@@@B@B/&lt;r&lt;&lt;&lt;ii---------^:----r---\-B#BBBB&lt;</text>
-<text x="28" y="132.0" font-size="8" fill="#24292f">     /@@B@@B/!r&lt;r!!^:--:---..      ...---\\#BBBB\!</text>
-<text x="28" y="141.6" font-size="8" fill="#24292f">     |@@@@B#i!&lt;r&lt;r!:--...           ....-:-\9BB#B\</text>
-<text x="28" y="151.2" font-size="8" fill="#24292f">     B@@@B#9orrrr!^:-....          .....-:-^oBBB@|</text>
-<text x="28" y="160.8" font-size="8" fill="#24292f">    wBBB@B#Eo&lt;&lt;r!^^:-....         ......-::!{BBB@9</text>
-<text x="28" y="170.4" font-size="8" fill="#24292f">     \BBB#9woi&lt;r!^^:--.. .  ...  .......::^!w#B@//^</text>
-<text x="28" y="180.0" font-size="8" fill="#24292f">      9B##9Eo&lt;r!!^^::-.   ..............:^^^rE#9/</text>
-<text x="28" y="189.6" font-size="8" fill="#24292f">      #B##9#wir^:^:-...  ....       ...-:^^^:|B/</text>
-<text x="28" y="199.2" font-size="8" fill="#24292f">      wBE9####EowEEw\\- .....-:--&lt;&lt;r^::^^^^^^E9&lt;</text>
-<text x="28" y="208.8" font-size="8" fill="#24292f">      EEiwEwoowo{i{owEw-!- -^r{www{{ow{&lt;!^^:|#/^</text>
-<text x="28" y="218.4" font-size="8" fill="#24292f">      E#ri{r&lt;owioEo::r{B|..:^-rr!Ewo&lt;&lt;!:---.i/-|</text>
-<text x="28" y="228.0" font-size="8" fill="#24292f">      |B!ro!!rr!^:--:!w#|.-^::^^^:-----..-.--- |</text>
-<text x="28" y="237.6" font-size="8" fill="#24292f">      i9i:w&lt;^^:------iE9| ^^:-..--....---:..--</text>
-<text x="28" y="247.2" font-size="8" fill="#24292f">       !{^o{&lt;!^:-.. ^oEE| :::-  ..   ..-:-.--</text>
-<text x="28" y="256.8" font-size="8" fill="#24292f">         :^wo&lt;^:-. ./woo^ -:::..--.  ...-.-^:</text>
-<text x="28" y="266.4" font-size="8" fill="#24292f">         ^rwwi^:::-//Ei{: -::^-..--...---./&lt;</text>
-<text x="28" y="276.0" font-size="8" fill="#24292f">         i!ww&lt;i-----#@BE\://-E---o--\-:--/#|--</text>
-<text x="28" y="285.6" font-size="8" fill="#24292f">          ^wEo9BBBB@@B#B#oE###BB#9#@|:.://Bo^ .</text>
-<text x="28" y="295.2" font-size="8" fill="#24292f">           iwE9B----o-9E/&lt;&lt;-wE-/----!::-/B/</text>
-<text x="28" y="304.8" font-size="8" fill="#24292f">            \oo&lt;- .^!^rr::--:^:..--::^:{iE</text>
-<text x="28" y="314.4" font-size="8" fill="#24292f">              &lt;i{i&lt;ioi&lt;rr!!^^-   :::^-.!</text>
-<text x="28" y="324.0" font-size="8" fill="#24292f">               &lt;&lt;oi^^!!!^:..:    -^::--</text>
-<text x="28" y="333.6" font-size="8" fill="#24292f">     -   \     EEo{{&lt;!^:--.^!.  .---::--r</text>
-<text x="28" y="343.2" font-size="8" fill="#24292f">     .    -    |99iwoi&lt;r!rr&lt;r----..-:^--i:</text>
-<text x="28" y="352.8" font-size="8" fill="#24292f">     \::.  .   oE9{{{iiir!:r!----...::-r!--</text>
-<text x="28" y="362.4" font-size="8" fill="#24292f">      \^:--.-   oEE{r^^^:-.r:.-.-...--!^.----:-</text>
-<text x="28" y="372.0" font-size="8" fill="#24292f">       !^!!^..  iwwi!^:::--!:.  .. .:^- .--.     -</text>
-<text x="28" y="381.6" font-size="8" fill="#24292f">        !^:.  .:r{{ir!!^:::r-.....-:-..-.    .--</text>
-<text x="28" y="391.2" font-size="8" fill="#24292f">         ^:.    &lt;i!&lt;i&lt;&lt;r!^!!.-.---.....   .-:^^-</text>
-<text x="28" y="400.8" font-size="8" fill="#24292f">          !^.....!!&lt;iow{{r&lt;!!.-:---.   .:^!^^^:</text>
-<text x="28" y="410.4" font-size="8" fill="#24292f">         --r:---..:!iwEoi&lt;&lt;ir..-..  .-^!^^::--.       -</text>
-<text x="324.0" y="43.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> georgielovejuice@github </tspan><tspan fill="#d0d7de">──────────────────────────────</tspan></text>
-<text x="324.0" y="63.0" font-size="16"><tspan fill="#953800">. OS: </tspan><tspan fill="#8c959f">...........................</tspan><tspan fill="#24292f"> macOS, Windows, Linux</tspan></text>
-<text x="324.0" y="83.0" font-size="16"><tspan fill="#953800">. Host: </tspan><tspan fill="#8c959f">.........................................</tspan><tspan fill="#24292f"> KMITL</tspan></text>
-<text x="324.0" y="103.0" font-size="16"><tspan fill="#953800">. Kernel: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Computer Engineering (Intl.), Class of 2028</tspan></text>
-<text x="324.0" y="123.0" font-size="16"><tspan fill="#953800">. IDE: </tspan><tspan fill="#8c959f">........................................</tspan><tspan fill="#24292f"> VS Code</tspan></text>
-<text x="324.0" y="143.0" font-size="16"></text>
-<text x="324.0" y="163.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> Languages </tspan><tspan fill="#d0d7de">────────────────────────────────────────────</tspan></text>
-<text x="324.0" y="183.0" font-size="16"><tspan fill="#953800">. Languages.Programming: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Python, TypeScript, SQL, Bash</tspan></text>
-<text x="324.0" y="203.0" font-size="16"><tspan fill="#953800">. Languages.Real: </tspan><tspan fill="#8c959f">.......................</tspan><tspan fill="#24292f"> Thai, English</tspan></text>
-<text x="324.0" y="223.0" font-size="16"></text>
-<text x="324.0" y="243.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> Hobbies </tspan><tspan fill="#d0d7de">──────────────────────────────────────────────</tspan></text>
-<text x="324.0" y="263.0" font-size="16"><tspan fill="#953800">. Hobbies.Infra: </tspan><tspan fill="#8c959f">....</tspan><tspan fill="#24292f"> Homelab, Networking, Self-hosting</tspan></text>
-<text x="324.0" y="283.0" font-size="16"><tspan fill="#953800">. Hobbies.Hardware: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> PC building, Mechanical keyboards</tspan></text>
-<text x="324.0" y="303.0" font-size="16"></text>
-<text x="324.0" y="323.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> GitHub Stats </tspan><tspan fill="#d0d7de">─────────────────────────────────────────</tspan></text>
-<text x="324.0" y="343.0" font-size="16"><tspan fill="#953800">. Uptime: </tspan><tspan fill="#8c959f">..................</tspan><tspan fill="#24292f"> 8 years, 4 months, 22 days</tspan></text>
-<text x="324.0" y="363.0" font-size="16"><tspan fill="#953800">. Top languages: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Python 47%, TypeScript 20%, JavaScript 18%</tspan></text>
-<text x="324.0" y="383.0" font-size="16"><tspan fill="#953800">. Repos: </tspan><tspan fill="#8c959f">.............</tspan><tspan fill="#0550ae"> 11</tspan><tspan fill="#d0d7de"> | </tspan><tspan fill="#953800">. Stars: </tspan><tspan fill="#8c959f">..............</tspan><tspan fill="#0550ae"> 1</tspan></text>
-<text x="324.0" y="403.0" font-size="16"><tspan fill="#953800">. Followers: </tspan><tspan fill="#8c959f">..........</tspan><tspan fill="#0550ae"> 0</tspan><tspan fill="#d0d7de"> | </tspan><tspan fill="#953800">. Commits (1y): </tspan><tspan fill="#8c959f">.....</tspan><tspan fill="#0550ae"> 216</tspan></text>
-<text x="324.0" y="423.0" font-size="16"><tspan fill="#953800">. PRs (1y): </tspan><tspan fill="#8c959f">........................................</tspan><tspan fill="#24292f"> 23</tspan></text>
+<text x="28" y="48.0" font-size="16" fill="#24292f">                !i#@@#wwwi:                 </text>
+<text x="28" y="68.0" font-size="16" fill="#24292f">              ^E@@@@@@@@@@@w:               </text>
+<text x="28" y="88.0" font-size="16" fill="#24292f">             ^#@#EE999oowE#@B^              </text>
+<text x="28" y="108.0" font-size="16" fill="#24292f">             E@#&lt;r^:--...-^o@E              </text>
+<text x="28" y="128.0" font-size="16" fill="#24292f">            .9@9ir^-.....-:r@9.             </text>
+<text x="28" y="148.0" font-size="16" fill="#24292f">             &lt;B#o&lt;&lt;:.--^^:^!E:              </text>
+<text x="28" y="168.0" font-size="16" fill="#24292f">             rwoooio&lt;:r{{&lt;^^&lt;               </text>
+<text x="28" y="188.0" font-size="16" fill="#24292f">             -ii!:-o&lt;:--.-:-.               </text>
+<text x="28" y="208.0" font-size="16" fill="#24292f">              .oiri9rr&lt;r!:^&lt;                </text>
+<text x="28" y="228.0" font-size="16" fill="#24292f">               r9EE9oowii^{r                </text>
+<text x="28" y="248.0" font-size="16" fill="#24292f">                ^i&lt;r!^..:::                 </text>
+<text x="28" y="268.0" font-size="16" fill="#24292f">             -.  Ew&lt;!!:-:^^                 </text>
+<text x="28" y="288.0" font-size="16" fill="#24292f">             .^:.io!^^---::--               </text>
+<text x="28" y="308.0" font-size="16" fill="#24292f">              .:.!i{&lt;!-----::.              </text>
+<text x="28" y="328.0" font-size="16" fill="#24292f">              :!^.:w{&lt;-----.....            </text>
+<text x="28" y="348.0" font-size="16" fill="#24292f">            .ri!&lt;  :^!--  ........          </text>
+<text x="28" y="368.0" font-size="16" fill="#24292f">            .{o{{o^.----.  ...   .          </text>
+<text x="28" y="388.0" font-size="16" fill="#24292f">            -w{i{&lt;!--..-:---.               </text>
+<text x="28" y="408.0" font-size="16" fill="#24292f">            &lt;wwii^--:-.-::. ..              </text>
+<text x="28" y="428.0" font-size="16" fill="#24292f">           -{9@w!^^:--..-:-::.  ..          </text>
+<text x="28" y="448.0" font-size="16" fill="#24292f">           !wE#w&lt;!::-....^!^.               </text>
+<text x="28" y="468.0" font-size="16" fill="#24292f">           :9EwE^^!:--:  ^^:-..             </text>
+<text x="482.4" y="63.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> georgielovejuice@github </tspan><tspan fill="#d0d7de">──────────────────────────────</tspan></text>
+<text x="482.4" y="83.0" font-size="16"><tspan fill="#953800">. OS: </tspan><tspan fill="#8c959f">...........................</tspan><tspan fill="#24292f"> macOS, Windows, Linux</tspan></text>
+<text x="482.4" y="103.0" font-size="16"><tspan fill="#953800">. Host: </tspan><tspan fill="#8c959f">.........................................</tspan><tspan fill="#24292f"> KMITL</tspan></text>
+<text x="482.4" y="123.0" font-size="16"><tspan fill="#953800">. Kernel: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Computer Engineering (Intl.), Class of 2028</tspan></text>
+<text x="482.4" y="143.0" font-size="16"><tspan fill="#953800">. IDE: </tspan><tspan fill="#8c959f">........................................</tspan><tspan fill="#24292f"> VS Code</tspan></text>
+<text x="482.4" y="163.0" font-size="16"></text>
+<text x="482.4" y="183.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> Languages </tspan><tspan fill="#d0d7de">────────────────────────────────────────────</tspan></text>
+<text x="482.4" y="203.0" font-size="16"><tspan fill="#953800">. Languages.Programming: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Python, TypeScript, SQL, Bash</tspan></text>
+<text x="482.4" y="223.0" font-size="16"><tspan fill="#953800">. Languages.Real: </tspan><tspan fill="#8c959f">.......................</tspan><tspan fill="#24292f"> Thai, English</tspan></text>
+<text x="482.4" y="243.0" font-size="16"></text>
+<text x="482.4" y="263.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> Hobbies </tspan><tspan fill="#d0d7de">──────────────────────────────────────────────</tspan></text>
+<text x="482.4" y="283.0" font-size="16"><tspan fill="#953800">. Hobbies.Infra: </tspan><tspan fill="#8c959f">....</tspan><tspan fill="#24292f"> Homelab, Networking, Self-hosting</tspan></text>
+<text x="482.4" y="303.0" font-size="16"><tspan fill="#953800">. Hobbies.Hardware: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> PC building, Mechanical keyboards</tspan></text>
+<text x="482.4" y="323.0" font-size="16"></text>
+<text x="482.4" y="343.0" font-size="16"><tspan fill="#d0d7de">─</tspan><tspan fill="#0969da"> GitHub Stats </tspan><tspan fill="#d0d7de">─────────────────────────────────────────</tspan></text>
+<text x="482.4" y="363.0" font-size="16"><tspan fill="#953800">. Uptime: </tspan><tspan fill="#8c959f">..................</tspan><tspan fill="#24292f"> 8 years, 4 months, 22 days</tspan></text>
+<text x="482.4" y="383.0" font-size="16"><tspan fill="#953800">. Top languages: </tspan><tspan fill="#8c959f">..</tspan><tspan fill="#24292f"> Python 47%, TypeScript 20%, JavaScript 18%</tspan></text>
+<text x="482.4" y="403.0" font-size="16"><tspan fill="#953800">. Repos: </tspan><tspan fill="#8c959f">.............</tspan><tspan fill="#0550ae"> 11</tspan><tspan fill="#d0d7de"> | </tspan><tspan fill="#953800">. Stars: </tspan><tspan fill="#8c959f">..............</tspan><tspan fill="#0550ae"> 1</tspan></text>
+<text x="482.4" y="423.0" font-size="16"><tspan fill="#953800">. Followers: </tspan><tspan fill="#8c959f">..........</tspan><tspan fill="#0550ae"> 0</tspan><tspan fill="#d0d7de"> | </tspan><tspan fill="#953800">. Commits (1y): </tspan><tspan fill="#8c959f">.....</tspan><tspan fill="#0550ae"> 216</tspan></text>
+<text x="482.4" y="443.0" font-size="16"><tspan fill="#953800">. PRs (1y): </tspan><tspan fill="#8c959f">........................................</tspan><tspan fill="#24292f"> 23</tspan></text>
 </g></svg>
