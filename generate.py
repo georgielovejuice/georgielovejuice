@@ -1,7 +1,8 @@
+# Builds dark_mode.svg and light_mode.svg for my GitHub profile README.
 # Idea from Andrew6rant's neofetch-style profile.
 #
 # Run locally:
-#   pip install pillow
+#   pip install pillow numpy "rembg[cpu]"
 #   GITHUB_TOKEN=<token> python card/generate.py
 
 import json
@@ -11,7 +12,9 @@ from datetime import datetime, timezone
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from PIL import Image, ImageOps
+import numpy as np
+from PIL import Image, ImageFilter
+from rembg import new_session, remove
 
 USERNAME = "georgielovejuice"
 
@@ -30,12 +33,14 @@ ABOUT = [
 ]
 
 PHOTO = ""        # empty = use my GitHub avatar, or e.g. "card/photo.png"
-REMOVE_BACKGROUND = True  # works best with a plain wall behind me
-ART_WIDTH = 60    # how many characters wide the portrait is
+ART_WIDTH = 70    # how many characters wide the portrait is
 TEXT_WIDTH = 56   # how many characters wide the info column is
 
-# Characters from light to heavy. More ink = brighter on a dark card.
-SHADES = " .:-=+*#%@"
+SHADES = " .-:^!r<i{owE9#B@"
+
+# Edge characters, chosen by which way the edge runs.
+EDGE_CHARS = {"horizontal": "-", "vertical": "|", "rising": "/", "falling": "\\"}
+EDGE_AMOUNT = 8  # % of the portrait drawn with edge characters
 
 COLORS = {
     "dark": {
@@ -139,37 +144,67 @@ def load_photo(user):
         return Image.open(BytesIO(response.read()))
 
 
-def is_close(color1, color2):
-    r1, g1, b1 = color1
-    r2, g2, b2 = color2
-    return abs(r1 - r2) + abs(g1 - g2) + abs(b1 - b2) < 60
+def cut_out_person(photo):
+    # rembg is a small neural network trained to find people in photos.
+    # It gives back the photo with a transparent background.
+    person = remove(photo.convert("RGB"), session=new_session("u2net_human_seg"))
+
+    # crop to the person so they fill the whole portrait
+    box = person.getchannel("A").point(lambda a: 255 if a > 128 else 0).getbbox()
+    if not box:
+        return person
+    left, top, right, bottom = box
+
+    # keep head and shoulders only, or a full-body photo makes the card huge
+    bottom = min(bottom, top + int((right - left) * 1.1))
+    return person.crop((left, top, right, bottom))
 
 
-def photo_to_ascii(photo, theme):
-    photo = photo.convert("RGB")
+def edge_char(dx, dy):
+    # dx, dy point the way brightness changes fastest, so the edge itself
+    # runs at 90 degrees to that
+    angle = np.degrees(np.arctan2(dy, dx)) % 180
+    if angle < 22.5 or angle >= 157.5:
+        return EDGE_CHARS["vertical"]
+    if angle < 67.5:
+        return EDGE_CHARS["rising"]
+    if angle < 112.5:
+        return EDGE_CHARS["horizontal"]
+    return EDGE_CHARS["falling"]
 
+
+def photo_to_ascii(person, theme):
     # a character is about twice as tall as it is wide, so use half the rows
-    rows = int(ART_WIDTH * photo.height / photo.width / 2)
-    small = photo.resize((ART_WIDTH, rows))
-    gray = ImageOps.autocontrast(small.convert("L"))
+    rows = int(ART_WIDTH * person.height / person.width / 2)
 
-    # guess the background from the top-left corner and leave it blank,
-    # otherwise a white wall turns into a solid block of @@@@
-    background = small.getpixel((0, 0))
+    # sharpen first so small details (eyes, glasses) survive the shrinking
+    small = person.filter(ImageFilter.UnsharpMask(radius=2, percent=80)).resize((ART_WIDTH, rows))
+    gray = np.array(small.convert("L"), dtype=float) / 255
+    is_person = np.array(small.getchannel("A")) > 128
+
+    # stretch contrast using only the person's pixels, not the empty background
+    low, high = np.percentile(gray[is_person], [2, 98])
+    gray = np.clip((gray - low) / (high - low + 1e-6), 0, 1)
+    if theme == "light":
+        gray = 1 - gray  # dark ink on white paper
+
+    # how fast brightness changes at each cell (a simple Sobel-like gradient)
+    dy, dx = np.gradient(gray)
+    strength = np.hypot(dx, dy)
+    # only the strongest edges get a line character, the rest stay shaded
+    edge_limit = np.percentile(strength[is_person], 100 - EDGE_AMOUNT)
 
     lines = []
     for y in range(rows):
         line = ""
         for x in range(ART_WIDTH):
-            if REMOVE_BACKGROUND and is_close(small.getpixel((x, y)), background):
+            if not is_person[y, x]:
                 line += " "
-                continue
-            brightness = gray.getpixel((x, y)) / 255
-            if theme == "light":
-                brightness = 1 - brightness  # dark ink on white paper
-            index = int(brightness * (len(SHADES) - 1))
-            line += SHADES[index]
-        lines.append(line)
+            elif strength[y, x] > edge_limit:
+                line += edge_char(dx[y, x], dy[y, x])
+            else:
+                line += SHADES[int(gray[y, x] * (len(SHADES) - 1))]
+        lines.append(line.rstrip())
     return lines
 
 def dotted_row(key, value, width):
@@ -215,7 +250,8 @@ def make_svg(art, rows, theme):
 
     # monospace fonts are about 0.6x as wide as their size
     art_x, art_size, art_line = pad, 8, 9.6
-    text_x = pad + ART_WIDTH * art_size * 0.6 + 32
+    art_width = max(len(line) for line in art)
+    text_x = pad + art_width * art_size * 0.6 + 32
     text_size, text_line = 16, 20
 
     width = int(text_x + TEXT_WIDTH * text_size * 0.6 + pad)
@@ -246,11 +282,11 @@ def make_svg(art, rows, theme):
 if __name__ == "__main__":
     user = ask_github(os.environ["GITHUB_TOKEN"])
     stats = get_stats(user)
-    photo = load_photo(user)
     rows = info_rows(stats)
+    person = cut_out_person(load_photo(user))
 
     for theme in ["dark", "light"]:
-        art = photo_to_ascii(photo, theme)
+        art = photo_to_ascii(person, theme)
         with open(f"{theme}_mode.svg", "w", encoding="utf-8") as f:
             f.write(make_svg(art, rows, theme))
         print("made", f"{theme}_mode.svg")
