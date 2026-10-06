@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "card/**"
+      - "generate.py"
       - ".github/workflows/card.yaml"
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
 
       - run: pip install pillow
 
-      - run: python card/generate.py
+      - run: python generate.py
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
