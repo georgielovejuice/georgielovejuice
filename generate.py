@@ -31,8 +31,6 @@ ABOUT = [
 ]
 
 PHOTO = ""        # empty = use my GitHub avatar, or e.g. "card/photo.png"
-REMOVE_BACKGROUND = True
-BACKGROUND_TOLERANCE = 60  # raise if bits of background remain, lower if it eats into me
 ART_WIDTH = 90    # detail: more characters = sharper portrait (40-160)
 ART_SIZE_PX = 420 # the portrait stays this wide no matter the detail
 TEXT_WIDTH = 58   # how many characters wide the info column is
@@ -148,41 +146,18 @@ def load_photo(user):
         return Image.open(BytesIO(response.read()))
 
 
-def find_background(small):
-    width, height = small.size
-    corner = small.getpixel((0, 0))
-    background = set()
-    to_visit = [(x, y) for x in range(width) for y in (0, height - 1)]
-    to_visit += [(x, y) for y in range(height) for x in (0, width - 1)]
-
-    while to_visit:
-        x, y = to_visit.pop()
-        if (x, y) in background or not (0 <= x < width and 0 <= y < height):
-            continue
-        r, g, b = small.getpixel((x, y))
-        if abs(r - corner[0]) + abs(g - corner[1]) + abs(b - corner[2]) > BACKGROUND_TOLERANCE:
-            continue
-        background.add((x, y))
-        to_visit += [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]
-    return background
-
-
 def photo_to_ascii(photo, theme):
     photo = photo.convert("RGB")
-
+ 
     # a character is about twice as tall as it is wide, so use half the rows
     rows = int(ART_WIDTH * photo.height / photo.width / 2)
     small = photo.resize((ART_WIDTH, rows))
     gray = ImageOps.autocontrast(small.convert("L"), cutoff=2)
-    background = find_background(small) if REMOVE_BACKGROUND else set()
-
+ 
     lines = []
     for y in range(rows):
         line = ""
         for x in range(ART_WIDTH):
-            if (x, y) in background:
-                line += " "
-                continue
             brightness = gray.getpixel((x, y)) / 255
             if theme == "light":
                 brightness = 1 - brightness  # dark ink on white paper
