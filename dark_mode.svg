@@ -1,51 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1064" height="475">
 <rect x="0.5" y="0.5" width="1063" height="474" rx="8" fill="#0d1117" stroke="#30363d"/>
 <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" xml:space="preserve">
-<text x="28" y="36.8" font-size="7.78" fill="#c9d1d9">                                    E&lt;-    .r{o{{{w                                       </text>
-<text x="28" y="46.2" font-size="7.78" fill="#c9d1d9">                                 i^:         .     .:&lt;E                                   </text>
-<text x="28" y="55.5" font-size="7.78" fill="#c9d1d9">                              9{-           .          :{                                 </text>
-<text x="28" y="64.8" font-size="7.78" fill="#c9d1d9">                             w^.                        -iE                               </text>
-<text x="28" y="74.2" font-size="7.78" fill="#c9d1d9">                            9:      ..       ...           {                              </text>
-<text x="28" y="83.5" font-size="7.78" fill="#c9d1d9">                           E:    :!r!!^^-:::^ri{i&lt;rr!:.    -w                             </text>
-<text x="28" y="92.8" font-size="7.78" fill="#c9d1d9">                           ^    :i{i{owEwwEE99####99EEo!.   r                             </text>
-<text x="28" y="102.2" font-size="7.78" fill="#c9d1d9">                          #.    ^iii{oE99##BBB#####999EEr.  -9                            </text>
-<text x="28" y="111.5" font-size="7.78" fill="#c9d1d9">                          &lt;    .^&lt;i{owE9###########999EE{-   o                            </text>
-<text x="28" y="120.8" font-size="7.78" fill="#c9d1d9">                          E:   -^&lt;i{owE9#########99999wwi-  -o                            </text>
-<text x="28" y="130.2" font-size="7.78" fill="#c9d1d9">                           i  .-^&lt;{owwE9####9####99999wwor.:E                             </text>
-<text x="28" y="139.5" font-size="7.78" fill="#c9d1d9">                           o ...-^&lt;i&lt;&lt;oE##99##9EEE999woowi.i                              </text>
-<text x="28" y="148.8" font-size="7.78" fill="#c9d1d9">                           9:^:-:::^^^:^&lt;oE#Eor^^!!r&lt;{oww^^E                              </text>
-<text x="28" y="158.2" font-size="7.78" fill="#c9d1d9">                           o.rr&lt;i!!r!iwi::E9ww{{r!&lt;i{wE9w&lt;o#                              </text>
-<text x="28" y="167.5" font-size="7.78" fill="#c9d1d9">                           9-ri&lt;{oowEEEi:^EEwEwwEE99E9E9999                               </text>
-<text x="28" y="176.8" font-size="7.78" fill="#c9d1d9">                            w!{!iowE99Er:r9wwE##9#B#9EE99E                                </text>
-<text x="28" y="186.2" font-size="7.78" fill="#c9d1d9">                             #wr!iwE##E!^&lt;9EEE#99###999Ew#                                </text>
-<text x="28" y="195.5" font-size="7.78" fill="#c9d1d9">                              or^&lt;owoor-^{#EoiowwoE9EEE!o                                 </text>
-<text x="28" y="204.8" font-size="7.78" fill="#c9d1d9">                              9r:!:-.    -r!....-.-{EEi &lt;9                                </text>
-<text x="28" y="214.2" font-size="7.78" fill="#c9d1d9">                               w::. --::-^&lt;r^:^&lt;oi&lt;oEo.rE                                 </text>
-<text x="28" y="223.5" font-size="7.78" fill="#c9d1d9">                                wr!o9wi{i{wwwoE#9EEww&lt;r9                                  </text>
-<text x="28" y="232.8" font-size="7.78" fill="#c9d1d9">                                  irriiii{oww9BB9wwE9                                     </text>
-<text x="28" y="242.2" font-size="7.78" fill="#c9d1d9">                                  o:!riowEE9w9##9EEEEE9                                   </text>
-<text x="28" y="251.5" font-size="7.78" fill="#c9d1d9">                           E# #   9.-!^ri{{{iE9999EwE{{                                   </text>
-<text x="28" y="260.8" font-size="7.78" fill="#c9d1d9">                           9oE99   ^-!rii{ww{EEE999EwoEE9                                 </text>
-<text x="28" y="270.2" font-size="7.78" fill="#c9d1d9">                            9oowE  i:^iowEEEo9##9#9ww99E999                               </text>
-<text x="28" y="279.5" font-size="7.78" fill="#c9d1d9">                             E{E# 9{rrioowwww9##99E999##B#99                              </text>
-<text x="28" y="288.8" font-size="7.78" fill="#c9d1d9">                              Ew#  wi{&lt;r&lt;io{w99E999####9Eww9                              </text>
-<text x="28" y="298.2" font-size="7.78" fill="#c9d1d9">                               ow999Eo&lt;^:!&lt;i{E9E9###Ewowww9                               </text>
-<text x="28" y="307.5" font-size="7.78" fill="#c9d1d9">                             EEo{E99##w!^i{ii9#9999999                                    </text>
-<text x="28" y="316.8" font-size="7.78" fill="#c9d1d9">                            ow{oo&lt;EBBB#&lt;^r{ii9#99                                         </text>
-<text x="28" y="326.2" font-size="7.78" fill="#c9d1d9">                          9io&lt;iEo&lt;B@BB@#{E9{o9##9                                         </text>
-<text x="28" y="335.5" font-size="7.78" fill="#c9d1d9">                          ior!{E&lt;!iE#BB###9oE9##9                                         </text>
-<text x="28" y="344.8" font-size="7.78" fill="#c9d1d9">                          o{:^i!^!^:rE#B##999#99E9                                        </text>
-<text x="28" y="354.2" font-size="7.78" fill="#c9d1d9">                          E!-^i^!{wr-{E9#99###99EE       #                                </text>
-<text x="28" y="363.5" font-size="7.78" fill="#c9d1d9">                          {::ro{^r{{&lt;{E99999###99E9   9999                                </text>
-<text x="28" y="372.8" font-size="7.78" fill="#c9d1d9">                         E&lt;:&lt;r&lt;w&lt;.r{E999999######9EEEwE9                                  </text>
-<text x="28" y="382.2" font-size="7.78" fill="#c9d1d9">                         {rir!r&lt;!riw##99EE99######EEE9                                    </text>
-<text x="28" y="391.5" font-size="7.78" fill="#c9d1d9">                        E!^^  ^r&lt;{{o9999EEEE99#9EEwwE    ##                               </text>
-<text x="28" y="400.8" font-size="7.78" fill="#c9d1d9">                        ori.   !{EE{{wE9##9##9 #99EEE9  #99#                              </text>
-<text x="28" y="410.2" font-size="7.78" fill="#c9d1d9">                        r!{:   .r{wEwwww9####      9EE9EwoE                               </text>
-<text x="28" y="419.5" font-size="7.78" fill="#c9d1d9">                       E^:{^  .^!&lt;ioEE9EE9##       #EwEwio                                </text>
-<text x="28" y="428.8" font-size="7.78" fill="#c9d1d9">                       or-r! :r^!oo{wE999999#      E{{{o9                                 </text>
-<text x="28" y="438.2" font-size="7.78" fill="#c9d1d9">                       Ei-:!!&lt;^.rw9w{oE99##99E#    9{oEwE #9#                             </text>
-<text x="28" y="447.5" font-size="7.78" fill="#c9d1d9">                        i-.-r:..&lt;w99w{owwwE99{w    #9999EEE9#                             </text>
+<text x="28" y="36.8" font-size="7.78" fill="#c9d1d9">BBBBBBBBBBBBBBBBBB@@@BBB@@@@@@@@@@@BE&lt;-    .r{o{{{w#B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="46.2" font-size="7.78" fill="#c9d1d9">BBB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#i^:         .     .:&lt;E#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="55.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B9{-           .          :{B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="64.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@Bw^.                        -iEB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="74.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@BB9:      ..       ...           {@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="83.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@E:    :!r!!^^-:::^ri{i&lt;rr!:.    -wB@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="92.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@B^    :i{i{owEwwEE99####99EEo!.   rB@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="102.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@#.    ^iii{oE99##BBB#####999EEr.  -9@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="111.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;    .^&lt;i{owE9###########999EE{-   o@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="120.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@E:   -^&lt;i{owE9#########99999wwi-  -oB@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="130.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@i  .-^&lt;{owwE9####9####99999wwor.:EBB@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="139.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@o ...-^&lt;i&lt;&lt;oE##99##9EEE999woowi.iB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="148.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@9:^:-:::^^^:^&lt;oE#Eor^^!!r&lt;{oww^^E@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="158.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@o.rr&lt;i!!r!iwi::E9ww{{r!&lt;i{wE9w&lt;o#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="167.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@9-ri&lt;{oowEEEi:^EEwEwwEE99E9E9999B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="176.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@w!{!iowE99Er:r9wwE##9#B#9EE99E#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="186.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#wr!iwE##E!^&lt;9EEE#99###999Ew#B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="195.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Bor^&lt;owoor-^{#EoiowwoE9EEE!oBB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="204.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B9r:!:-.    -r!....-.-{EEi &lt;9BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="214.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@w::. --::-^&lt;r^:^&lt;oi&lt;oEo.rE#BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="223.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@wr!o9wi{i{wwwoE#9EEww&lt;r9@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="232.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Birriiii{oww9BB9wwE9B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="242.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@B#BBB@@@o:!riowEE9w9##9EEEEE9@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="251.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@BE#B##@@9.-!^ri{{{iE9999EwE{{B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="260.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@9oE99#@B^-!rii{ww{EEE999EwoEE9#BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="270.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@9oowE#Bi:^iowEEEo9##9#9ww99E999BB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="279.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@E{E##9{rrioowwww9##99E999##B#99BBB@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="288.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Ew###wi{&lt;r&lt;io{w99E999####9Eww9B#BB@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="298.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#ow999Eo&lt;^:!&lt;i{E9E9###Ewowww9###BBBB@@@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="307.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@@BEEo{E99##w!^i{ii9#9999999##BBBBBBB##BBB@@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="316.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@@#ow{oo&lt;EBBB#&lt;^r{ii9#99#BBBBBBBB#########BB@@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="326.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@9io&lt;iEo&lt;B@BB@#{E9{o9##9BBBBB######BBBBBB##BB@@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="335.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@Bior!{E&lt;!iE#BB###9oE9##9###########BBBBBBBB#BB@@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="344.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@#o{:^i!^!^:rE#B##999#99E9##BBBB###BBBBBBBBBBBBB@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="354.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@@E!-^i^!{wr-{E9#99###99EEBBBBBB#####BBBBBBBBBBB@@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="363.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@B{::ro{^r{{&lt;{E99999###99E9###9999#BBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="372.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@@E&lt;:&lt;r&lt;w&lt;.r{E999999######9EEEwE9BBBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@@</text>
+<text x="28" y="382.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@B{rir!r&lt;!riw##99EE99######EEE9BBBBB#BBBBBBBBBBBBBB@@@@@@@@@@@@@@@@</text>
+<text x="28" y="391.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@@E!^^  ^r&lt;{{o9999EEEE99#9EEwwEBBB#####BBBBBBBBBBBBB@@@@@@@@@@@@@@@@</text>
+<text x="28" y="400.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@Bori.   !{EE{{wE9##9##9##99EEE9B##99####BB####BBBBB@@@@@@@@@@@@@@@@</text>
+<text x="28" y="410.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@#r!{:   .r{wEwwww9######B###9EE9EwoEBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@@</text>
+<text x="28" y="419.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@E^:{^  .^!&lt;ioEE9EE9######B###EwEwio#BBBBBBBBBBBBBBBB@@@@@@@@@@@@@@@</text>
+<text x="28" y="428.8" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@or-r! :r^!oo{wE999999##B#BBBE{{{o9BBBB#BBBBBBBBBBBBBB@@@@@@@@@@@@@@</text>
+<text x="28" y="438.2" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@Ei-:!!&lt;^.rw9w{oE99##99E#BBBB9{oEwE##9##BBBBBBBBBBBBBB@@@@@@@@@@@@@@</text>
+<text x="28" y="447.5" font-size="7.78" fill="#c9d1d9">@@@@@@@@@@@@@@@@@@@@@@@Bi-.-r:..&lt;w99w{owwwE99{wBBBB#9999EEE9###BBBBBBBBBBBBBB@@@@@@@@@@@@@</text>
 <text x="480.0" y="52.5" font-size="16"><tspan fill="#3d444d">─</tspan><tspan fill="#58a6ff"> georgielovejuice@github </tspan><tspan fill="#3d444d">────────────────────────────────</tspan></text>
 <text x="480.0" y="72.5" font-size="16"><tspan fill="#ffa657">. OS: </tspan><tspan fill="#484f58">..............................</tspan><tspan fill="#c9d1d9"> macOS, Windows, Linux</tspan></text>
 <text x="480.0" y="92.5" font-size="16"><tspan fill="#ffa657">. Host: </tspan><tspan fill="#484f58">............................................</tspan><tspan fill="#c9d1d9"> KMITL</tspan></text>
