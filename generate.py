@@ -31,7 +31,8 @@ ABOUT = [
 ]
 
 PHOTO = ""        # empty = use my GitHub avatar, or e.g. "card/photo.png"
-ART_WIDTH = 44    # how many characters wide the portrait is
+ART_WIDTH = 90    # detail: more characters = sharper portrait (40-160)
+ART_SIZE_PX = 420 # the portrait stays this wide no matter the detail
 TEXT_WIDTH = 56   # how many characters wide the info column is
 
 SHADES = " .-:^!r<i{owE9#B@"
@@ -199,7 +200,10 @@ def make_svg(art, rows, theme):
     font = "Consolas, Menlo, 'DejaVu Sans Mono', monospace"
 
     # monospace fonts are about 0.6x as wide as their size
-    art_x, art_size, art_line = pad, 16, 20
+    # more characters means smaller ones, so the portrait keeps the same size
+    art_x = pad
+    art_size = ART_SIZE_PX / (ART_WIDTH * 0.6)
+    art_line = art_size * 1.2
     art_width = max(len(line) for line in art)
     text_x = pad + art_width * art_size * 0.6 + 32
     text_size, text_line = 16, 20
@@ -217,7 +221,7 @@ def make_svg(art, rows, theme):
     art_top = (height - len(art) * art_line) / 2
     for i, line in enumerate(art):
         y = art_top + (i + 1) * art_line
-        svg.append(f'<text x="{art_x}" y="{y:.1f}" font-size="{art_size}" fill="{color["art"]}">{escape(line)}</text>')
+        svg.append(f'<text x="{art_x}" y="{y:.1f}" font-size="{art_size:.2f}" fill="{color["art"]}">{escape(line)}</text>')
 
     text_top = (height - len(rows) * text_line) / 2
     for i, row in enumerate(rows):
