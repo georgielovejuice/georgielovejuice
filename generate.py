@@ -31,9 +31,11 @@ ABOUT = [
 ]
 
 PHOTO = ""        # empty = use my GitHub avatar, or e.g. "card/photo.png"
+REMOVE_BACKGROUND = True
+BACKGROUND_TOLERANCE = 60  # raise if bits of background remain, lower if it eats into me
 ART_WIDTH = 90    # detail: more characters = sharper portrait (40-160)
 ART_SIZE_PX = 420 # the portrait stays this wide no matter the detail
-TEXT_WIDTH = 56   # how many characters wide the info column is
+TEXT_WIDTH = 58   # how many characters wide the info column is
 
 SHADES = " .-:^!r<i{owE9#B@"
 
@@ -115,8 +117,15 @@ def top_languages(repos):
     if all_bytes == 0:
         return "-"
 
-    top3 = sorted(total, key=total.get, reverse=True)[:3]
-    return ", ".join(f"{name} {total[name] * 100 // all_bytes}%" for name in top3)
+    top = sorted(total, key=total.get, reverse=True)[:3]
+    text = ", ".join(f"{name} {total[name] * 100 // all_bytes}%" for name in top)
+
+    # drop the smallest language until it fits on one row
+    room = TEXT_WIDTH - len("Top languages") - 7
+    while len(text) > room and len(top) > 1:
+        top.pop()
+        text = ", ".join(f"{name} {total[name] * 100 // all_bytes}%" for name in top)
+    return text
 
 
 def get_stats(user):
@@ -139,6 +148,25 @@ def load_photo(user):
         return Image.open(BytesIO(response.read()))
 
 
+def find_background(small):
+    width, height = small.size
+    corner = small.getpixel((0, 0))
+    background = set()
+    to_visit = [(x, y) for x in range(width) for y in (0, height - 1)]
+    to_visit += [(x, y) for y in range(height) for x in (0, width - 1)]
+
+    while to_visit:
+        x, y = to_visit.pop()
+        if (x, y) in background or not (0 <= x < width and 0 <= y < height):
+            continue
+        r, g, b = small.getpixel((x, y))
+        if abs(r - corner[0]) + abs(g - corner[1]) + abs(b - corner[2]) > BACKGROUND_TOLERANCE:
+            continue
+        background.add((x, y))
+        to_visit += [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]
+    return background
+
+
 def photo_to_ascii(photo, theme):
     photo = photo.convert("RGB")
 
@@ -146,11 +174,15 @@ def photo_to_ascii(photo, theme):
     rows = int(ART_WIDTH * photo.height / photo.width / 2)
     small = photo.resize((ART_WIDTH, rows))
     gray = ImageOps.autocontrast(small.convert("L"), cutoff=2)
+    background = find_background(small) if REMOVE_BACKGROUND else set()
 
     lines = []
     for y in range(rows):
         line = ""
         for x in range(ART_WIDTH):
+            if (x, y) in background:
+                line += " "
+                continue
             brightness = gray.getpixel((x, y)) / 255
             if theme == "light":
                 brightness = 1 - brightness  # dark ink on white paper
@@ -159,9 +191,13 @@ def photo_to_ascii(photo, theme):
     return lines
 
 def dotted_row(key, value, width):
+    # ". " + key + ": " is len(key) + 4, then " " + value is len(value) + 1
     value = str(value)
-    dots = "." * max(2, width - len(key) - len(value) - 6)
-    return [(". " + key + ": ", "key"), (dots, "dots"), (" " + value, "value")]
+    dots = width - len(key) - len(value) - 5
+    if dots < 2:  # too long: cut the value so the row still ends on the edge
+        value = value[: len(value) + dots - 3] + "…"
+        dots = 2
+    return [(". " + key + ": ", "key"), ("." * dots, "dots"), (" " + value, "value")]
 
 
 def info_rows(stats):
@@ -185,10 +221,11 @@ def info_rows(stats):
     rows.append(dotted_row("Top languages", stats["Top languages"], TEXT_WIDTH))
 
     # numbers come in pairs, two per line: "Repos ... 24 | Stars ... 4"
-    half = (TEXT_WIDTH - 3) // 2
+    left_width = (TEXT_WIDTH - 3) // 2  # 3 = the " | " in the middle
+    right_width = TEXT_WIDTH - 3 - left_width
     pairs = [("Repos", "Stars"), ("Followers", "Commits (1y)")]
     for left, right in pairs:
-        row = dotted_row(left, stats[left], half) + [(" | ", "line")] + dotted_row(right, stats[right], half)
+        row = dotted_row(left, stats[left], left_width) + [(" | ", "line")] + dotted_row(right, stats[right], right_width)
         rows.append([(text, "number" if part == "value" else part) for text, part in row])
     rows.append(dotted_row("PRs (1y)", stats["PRs (1y)"], TEXT_WIDTH))
     return rows
