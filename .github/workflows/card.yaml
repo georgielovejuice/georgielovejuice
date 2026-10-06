@@ -7,7 +7,7 @@ on:
   push:
     paths:
       - "card/**"
-      - ".github/workflows/card.yml"
+      - ".github/workflows/card.yaml"
 
 permissions:
   contents: write
